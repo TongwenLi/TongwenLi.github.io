@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://ssnowy.coding.me/demo-autumn/2017/07/06/r15/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="keywords" content="hexo, autumn">
+    <title>
+        Tongwen Li
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favico.ico">
+     <link rel="stylesheet" href="style.css">
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="github-gist.min.css">
+    <script src="highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="main.js"></script><style type="text/css">.is-hidden {
+  display: none;
+}
+.is-relative {
+  position: relative;
+}
+.loader-inner {
+  text-align: center;
+}
+</style><style type="text/css">/* https://github.com/ConnorAtherton/loaders.css/blob/master/loaders.min.css */
+.ball-pulse-sync > div,
+.ball-pulse > div,
+.ball-scale-random > div,
+.ball-scale > div {
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 2px;
+  display: inline-block;
+}
+@-webkit-keyframes scale {
+  0%,
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+}
+@keyframes scale {
+  0%,
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+}
+.ball-pulse > div:nth-child(1) {
+  -webkit-animation: scale 0.75s -0.24s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: scale 0.75s -0.24s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.ball-pulse > div:nth-child(2) {
+  -webkit-animation: scale 0.75s -0.12s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: scale 0.75s -0.12s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.ball-pulse > div:nth-child(3) {
+  -webkit-animation: scale 0.75s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: scale 0.75s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.ball-pulse > div {
+  width: 15px;
+  height: 15px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes ball-pulse-sync {
+  33% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  66% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes ball-pulse-sync {
+  33% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  66% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.ball-pulse-sync > div:nth-child(1) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+  animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+}
+.ball-pulse-sync > div:nth-child(2) {
+  -webkit-animation: ball-pulse-sync 0.6s -70ms infinite ease-in-out;
+  animation: ball-pulse-sync 0.6s -70ms infinite ease-in-out;
+}
+.ball-pulse-sync > div:nth-child(3) {
+  -webkit-animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+  animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+}
+.ball-pulse-sync > div {
+  width: 15px;
+  height: 15px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.ball-scale > div {
+  height: 60px;
+  width: 60px;
+  -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+  animation: ball-scale 1s 0s ease-in-out infinite;
+}
+.ball-scale-random {
+  width: 37px;
+  height: 40px;
+}
+.ball-scale-random > div {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+  animation: ball-scale 1s 0s ease-in-out infinite;
+}
+.ball-rotate,
+.ball-rotate > div {
+  position: relative;
+}
+.ball-rotate > div,
+.ball-rotate > div:after,
+.ball-rotate > div:before {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.ball-scale-random > div:nth-child(1) {
+  margin-left: -7px;
+  -webkit-animation: ball-scale 1s 0.2s ease-in-out infinite;
+  animation: ball-scale 1s 0.2s ease-in-out infinite;
+}
+.ball-scale-random > div:nth-child(3) {
+  margin-left: -2px;
+  margin-top: 9px;
+  -webkit-animation: ball-scale 1s 0.5s ease-in-out infinite;
+  animation: ball-scale 1s 0.5s ease-in-out infinite;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.ball-rotate > div {
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.ball-rotate > div:first-child {
+  -webkit-animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
+  animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
+}
+.ball-rotate > div:after,
+.ball-rotate > div:before {
+  margin: 2px;
+  content: "";
+  position: absolute;
+  opacity: 0.8;
+}
+.ball-rotate > div:before {
+  top: 0;
+  left: -28px;
+}
+.ball-rotate > div:after {
+  top: 0;
+  left: 25px;
+}
+.ball-clip-rotate > div {
+  border-radius: 100%;
+  margin: 2px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  height: 26px;
+  width: 26px;
+  background: 0 0!important;
+  display: inline-block;
+  -webkit-animation: rotate 0.75s 0s linear infinite;
+  animation: rotate 0.75s 0s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  30% {
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.ball-clip-rotate-pulse {
+  position: relative;
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+.ball-clip-rotate-pulse > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+}
+.ball-clip-rotate-pulse > div:first-child {
+  background: #fff;
+  height: 16px;
+  width: 16px;
+  top: 7px;
+  left: -7px;
+  -webkit-animation: scale 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+  animation: scale 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+}
+.ball-clip-rotate-pulse > div:last-child {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -16px;
+  top: -2px;
+  background: 0 0;
+  border: 2px solid;
+  border-color: #fff transparent;
+  -webkit-animation: rotate 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+  animation: rotate 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.ball-beat > div,
+.ball-scale-multiple > div {
+  background-color: #fff;
+  border-radius: 100%;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+    transform: rotate(180deg) scale(0.6);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+.ball-clip-rotate-multiple {
+  position: relative;
+}
+.ball-clip-rotate-multiple > div {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  -webkit-animation: rotate 1s 0s ease-in-out infinite;
+  animation: rotate 1s 0s ease-in-out infinite;
+}
+.ball-clip-rotate-multiple > div:last-child {
+  display: inline-block;
+  top: -10px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  border-color: #fff transparent;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+@-webkit-keyframes ball-scale-ripple {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ball-scale-ripple {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ball-scale-ripple > div {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  -webkit-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
+  animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
+}
+@-webkit-keyframes ball-scale-ripple-multiple {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ball-scale-ripple-multiple {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ball-scale-ripple-multiple {
+  position: relative;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+.ball-scale-ripple-multiple > div:nth-child(0) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.ball-scale-ripple-multiple > div:nth-child(1) {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.ball-scale-ripple-multiple > div:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.ball-scale-ripple-multiple > div:nth-child(3) {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.ball-scale-ripple-multiple > div {
+  position: absolute;
+  top: -2px;
+  left: -26px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  -webkit-animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
+  animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
+}
+@-webkit-keyframes ball-beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ball-beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.ball-beat > div {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  display: inline-block;
+  -webkit-animation: ball-beat 0.7s 0s infinite linear;
+  animation: ball-beat 0.7s 0s infinite linear;
+}
+.ball-beat > div:nth-child(2n-1) {
+  -webkit-animation-delay: -0.35s !important;
+  animation-delay: -0.35s !important;
+}
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.ball-scale-multiple {
+  position: relative;
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+.ball-scale-multiple > div:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.ball-scale-multiple > div:nth-child(3) {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.ball-scale-multiple > div {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  opacity: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+  animation: ball-scale-multiple 1s 0s linear infinite;
+}
+.ball-triangle-path > div:nth-child(1),
+.ball-triangle-path > div:nth-child(2) {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes ball-triangle-path-1 {
+  33% {
+    -webkit-transform: translate(25px, -50px);
+    transform: translate(25px, -50px);
+  }
+  66% {
+    -webkit-transform: translate(50px, 0);
+    transform: translate(50px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-triangle-path-1 {
+  33% {
+    -webkit-transform: translate(25px, -50px);
+    transform: translate(25px, -50px);
+  }
+  66% {
+    -webkit-transform: translate(50px, 0);
+    transform: translate(50px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes ball-triangle-path-2 {
+  33% {
+    -webkit-transform: translate(25px, 50px);
+    transform: translate(25px, 50px);
+  }
+  66% {
+    -webkit-transform: translate(-25px, 50px);
+    transform: translate(-25px, 50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-triangle-path-2 {
+  33% {
+    -webkit-transform: translate(25px, 50px);
+    transform: translate(25px, 50px);
+  }
+  66% {
+    -webkit-transform: translate(-25px, 50px);
+    transform: translate(-25px, 50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes ball-triangle-path-3 {
+  33% {
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+  }
+  66% {
+    -webkit-transform: translate(-25px, -50px);
+    transform: translate(-25px, -50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-triangle-path-3 {
+  33% {
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+  }
+  66% {
+    -webkit-transform: translate(-25px, -50px);
+    transform: translate(-25px, -50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.ball-triangle-path {
+  position: relative;
+  -webkit-transform: translate(-29.99px, -37.51px);
+  transform: translate(-29.99px, -37.51px);
+}
+.ball-triangle-path > div:nth-child(1) {
+  -webkit-animation-name: ball-triangle-path-1;
+  animation-name: ball-triangle-path-1;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.ball-triangle-path > div:nth-child(2) {
+  -webkit-animation-name: ball-triangle-path-2;
+  animation-name: ball-triangle-path-2;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.ball-triangle-path > div:nth-child(3) {
+  -webkit-animation-name: ball-triangle-path-3;
+  animation-name: ball-triangle-path-3;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.ball-triangle-path > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+.ball-grid-beat > div,
+.ball-pulse-rise > div {
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+}
+.ball-grid-beat > div,
+.ball-grid-pulse > div,
+.ball-pulse-rise > div {
+  height: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #fff;
+  margin: 2px;
+}
+.ball-triangle-path > div:nth-of-type(1) {
+  top: 50px;
+}
+.ball-triangle-path > div:nth-of-type(2) {
+  left: 25px;
+}
+.ball-triangle-path > div:nth-of-type(3) {
+  top: 50px;
+  left: 50px;
+}
+@-webkit-keyframes ball-pulse-rise-even {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  25% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  75% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ball-pulse-rise-even {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  25% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  75% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes ball-pulse-rise-odd {
+  0% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  25% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+}
+@keyframes ball-pulse-rise-odd {
+  0% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  25% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+}
+.ball-pulse-rise > div {
+  width: 15px;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.15, 0.46, 0.9, 0.6);
+  animation-timing-function: cubic-bezier(0.15, 0.46, 0.9, 0.6);
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+.ball-pulse-rise > div:nth-child(2n) {
+  -webkit-animation-name: ball-pulse-rise-even;
+  animation-name: ball-pulse-rise-even;
+}
+.ball-pulse-rise > div:nth-child(2n-1) {
+  -webkit-animation-name: ball-pulse-rise-odd;
+  animation-name: ball-pulse-rise-odd;
+}
+@-webkit-keyframes ball-grid-beat {
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ball-grid-beat {
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ball-grid-beat {
+  width: 57px;
+}
+.ball-grid-beat > div:nth-child(1) {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  -webkit-animation-duration: 1.45s;
+  animation-duration: 1.45s;
+}
+.ball-grid-beat > div:nth-child(2) {
+  -webkit-animation-delay: -20ms;
+  animation-delay: -20ms;
+  -webkit-animation-duration: 0.97s;
+  animation-duration: 0.97s;
+}
+.ball-grid-beat > div:nth-child(3) {
+  -webkit-animation-delay: 0.66s;
+  animation-delay: 0.66s;
+  -webkit-animation-duration: 1.23s;
+  animation-duration: 1.23s;
+}
+.ball-grid-beat > div:nth-child(4) {
+  -webkit-animation-delay: 0.64s;
+  animation-delay: 0.64s;
+  -webkit-animation-duration: 1.24s;
+  animation-duration: 1.24s;
+}
+.ball-grid-beat > div:nth-child(5) {
+  -webkit-animation-delay: -0.19s;
+  animation-delay: -0.19s;
+  -webkit-animation-duration: 1.13s;
+  animation-duration: 1.13s;
+}
+.ball-grid-beat > div:nth-child(6) {
+  -webkit-animation-delay: 0.69s;
+  animation-delay: 0.69s;
+  -webkit-animation-duration: 1.42s;
+  animation-duration: 1.42s;
+}
+.ball-grid-beat > div:nth-child(7) {
+  -webkit-animation-delay: 0.58s;
+  animation-delay: 0.58s;
+  -webkit-animation-duration: 1.14s;
+  animation-duration: 1.14s;
+}
+.ball-grid-beat > div:nth-child(8) {
+  -webkit-animation-delay: 0.21s;
+  animation-delay: 0.21s;
+  -webkit-animation-duration: 1.17s;
+  animation-duration: 1.17s;
+}
+.ball-grid-beat > div:nth-child(9) {
+  -webkit-animation-delay: -0.18s;
+  animation-delay: -0.18s;
+  -webkit-animation-duration: 0.65s;
+  animation-duration: 0.65s;
+}
+.ball-grid-beat > div {
+  width: 15px;
+  animation-fill-mode: both;
+  float: left;
+  -webkit-animation-name: ball-grid-beat;
+  animation-name: ball-grid-beat;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+@-webkit-keyframes ball-grid-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes ball-grid-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.ball-grid-pulse {
+  width: 57px;
+}
+.ball-grid-pulse > div:nth-child(1) {
+  -webkit-animation-delay: 0.22s;
+  animation-delay: 0.22s;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+}
+.ball-grid-pulse > div:nth-child(2) {
+  -webkit-animation-delay: 0.64s;
+  animation-delay: 0.64s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.ball-grid-pulse > div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+  -webkit-animation-duration: 0.63s;
+  animation-duration: 0.63s;
+}
+.ball-grid-pulse > div:nth-child(4) {
+  -webkit-animation-delay: -30ms;
+  animation-delay: -30ms;
+  -webkit-animation-duration: 1.24s;
+  animation-duration: 1.24s;
+}
+.ball-grid-pulse > div:nth-child(5) {
+  -webkit-animation-delay: 80ms;
+  animation-delay: 80ms;
+  -webkit-animation-duration: 1.37s;
+  animation-duration: 1.37s;
+}
+.ball-grid-pulse > div:nth-child(6) {
+  -webkit-animation-delay: 0.43s;
+  animation-delay: 0.43s;
+  -webkit-animation-duration: 1.55s;
+  animation-duration: 1.55s;
+}
+.ball-grid-pulse > div:nth-child(7) {
+  -webkit-animation-delay: 50ms;
+  animation-delay: 50ms;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+.ball-grid-pulse > div:nth-child(8) {
+  -webkit-animation-delay: 50ms;
+  animation-delay: 50ms;
+  -webkit-animation-duration: 0.97s;
+  animation-duration: 0.97s;
+}
+.ball-grid-pulse > div:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-duration: 0.63s;
+  animation-duration: 0.63s;
+}
+.ball-grid-pulse > div {
+  width: 15px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  float: left;
+  -webkit-animation-name: ball-grid-pulse;
+  animation-name: ball-grid-pulse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+@-webkit-keyframes ball-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ball-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.ball-spin-fade-loader {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+.ball-spin-fade-loader > div:nth-child(1) {
+  top: 25px;
+  left: 0;
+  -webkit-animation: ball-spin-fade-loader 1s -0.96s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.96s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(2) {
+  top: 17.05px;
+  left: 17.05px;
+  -webkit-animation: ball-spin-fade-loader 1s -0.84s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.84s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 25px;
+  -webkit-animation: ball-spin-fade-loader 1s -0.72s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.72s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(4) {
+  top: -17.05px;
+  left: 17.05px;
+  -webkit-animation: ball-spin-fade-loader 1s -0.6s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.6s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(5) {
+  top: -25px;
+  left: 0;
+  -webkit-animation: ball-spin-fade-loader 1s -0.48s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.48s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(6) {
+  top: -17.05px;
+  left: -17.05px;
+  -webkit-animation: ball-spin-fade-loader 1s -0.36s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.36s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -25px;
+  -webkit-animation: ball-spin-fade-loader 1s -0.24s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.24s infinite linear;
+}
+.ball-spin-fade-loader > div:nth-child(8) {
+  top: 17.05px;
+  left: -17.05px;
+  -webkit-animation: ball-spin-fade-loader 1s -0.12s infinite linear;
+  animation: ball-spin-fade-loader 1s -0.12s infinite linear;
+}
+.ball-spin-fade-loader > div,
+.ball-spin-loader > div {
+  -webkit-animation-fill-mode: both;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.ball-spin-fade-loader > div {
+  background-color: #fff;
+  margin: 2px;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes ball-spin-loader {
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ball-spin-loader {
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ball-spin-loader {
+  position: relative;
+}
+.ball-spin-loader > span:nth-child(1) {
+  top: 45px;
+  left: 0;
+  -webkit-animation: ball-spin-loader 2s 0.9s infinite linear;
+  animation: ball-spin-loader 2s 0.9s infinite linear;
+}
+.ball-spin-loader > span:nth-child(2) {
+  top: 30.68px;
+  left: 30.68px;
+  -webkit-animation: ball-spin-loader 2s 1.8s infinite linear;
+  animation: ball-spin-loader 2s 1.8s infinite linear;
+}
+.ball-spin-loader > span:nth-child(3) {
+  top: 0;
+  left: 45px;
+  -webkit-animation: ball-spin-loader 2s 2.7s infinite linear;
+  animation: ball-spin-loader 2s 2.7s infinite linear;
+}
+.ball-spin-loader > span:nth-child(4) {
+  top: -30.68px;
+  left: 30.68px;
+  -webkit-animation: ball-spin-loader 2s 3.6s infinite linear;
+  animation: ball-spin-loader 2s 3.6s infinite linear;
+}
+.ball-spin-loader > span:nth-child(5) {
+  top: -45px;
+  left: 0;
+  -webkit-animation: ball-spin-loader 2s 4.5s infinite linear;
+  animation: ball-spin-loader 2s 4.5s infinite linear;
+}
+.ball-spin-loader > span:nth-child(6) {
+  top: -30.68px;
+  left: -30.68px;
+  -webkit-animation: ball-spin-loader 2s 5.4s infinite linear;
+  animation: ball-spin-loader 2s 5.4s infinite linear;
+}
+.ball-spin-loader > span:nth-child(7) {
+  top: 0;
+  left: -45px;
+  -webkit-animation: ball-spin-loader 2s 6.3s infinite linear;
+  animation: ball-spin-loader 2s 6.3s infinite linear;
+}
+.ball-spin-loader > span:nth-child(8) {
+  top: 30.68px;
+  left: -30.68px;
+  -webkit-animation: ball-spin-loader 2s 7.2s infinite linear;
+  animation: ball-spin-loader 2s 7.2s infinite linear;
+}
+.ball-spin-loader > div {
+  animation-fill-mode: both;
+  background: green;
+}
+.ball-zig-zag-deflect > div,
+.ball-zig-zag > div {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px 2px 2px 15px;
+  top: 4px;
+  left: -7px;
+}
+@-webkit-keyframes ball-zig {
+  33% {
+    -webkit-transform: translate(-15px, -30px);
+    transform: translate(-15px, -30px);
+  }
+  66% {
+    -webkit-transform: translate(15px, -30px);
+    transform: translate(15px, -30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-zig {
+  33% {
+    -webkit-transform: translate(-15px, -30px);
+    transform: translate(-15px, -30px);
+  }
+  66% {
+    -webkit-transform: translate(15px, -30px);
+    transform: translate(15px, -30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes ball-zag {
+  33% {
+    -webkit-transform: translate(15px, 30px);
+    transform: translate(15px, 30px);
+  }
+  66% {
+    -webkit-transform: translate(-15px, 30px);
+    transform: translate(-15px, 30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-zag {
+  33% {
+    -webkit-transform: translate(15px, 30px);
+    transform: translate(15px, 30px);
+  }
+  66% {
+    -webkit-transform: translate(-15px, 30px);
+    transform: translate(-15px, 30px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.ball-zig-zag {
+  position: relative;
+  -webkit-transform: translate(-15px, -15px);
+  transform: translate(-15px, -15px);
+}
+.ball-zig-zag > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.ball-zig-zag > div:first-child {
+  -webkit-animation: ball-zig 0.7s 0s infinite linear;
+  animation: ball-zig 0.7s 0s infinite linear;
+}
+.ball-zig-zag > div:last-child {
+  -webkit-animation: ball-zag 0.7s 0s infinite linear;
+  animation: ball-zag 0.7s 0s infinite linear;
+}
+@-webkit-keyframes ball-zig-deflect {
+  17%,
+  84% {
+    -webkit-transform: translate(-15px, -30px);
+    transform: translate(-15px, -30px);
+  }
+  34%,
+  67% {
+    -webkit-transform: translate(15px, -30px);
+    transform: translate(15px, -30px);
+  }
+  100%,
+  50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-zig-deflect {
+  17%,
+  84% {
+    -webkit-transform: translate(-15px, -30px);
+    transform: translate(-15px, -30px);
+  }
+  34%,
+  67% {
+    -webkit-transform: translate(15px, -30px);
+    transform: translate(15px, -30px);
+  }
+  100%,
+  50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes ball-zag-deflect {
+  17%,
+  84% {
+    -webkit-transform: translate(15px, 30px);
+    transform: translate(15px, 30px);
+  }
+  34%,
+  67% {
+    -webkit-transform: translate(-15px, 30px);
+    transform: translate(-15px, 30px);
+  }
+  100%,
+  50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes ball-zag-deflect {
+  17%,
+  84% {
+    -webkit-transform: translate(15px, 30px);
+    transform: translate(15px, 30px);
+  }
+  34%,
+  67% {
+    -webkit-transform: translate(-15px, 30px);
+    transform: translate(-15px, 30px);
+  }
+  100%,
+  50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.ball-zig-zag-deflect {
+  position: relative;
+  -webkit-transform: translate(-15px, -15px);
+  transform: translate(-15px, -15px);
+}
+.ball-zig-zag-deflect > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.line-scale-party > div,
+.line-scale-pulse-out-rapid > div,
+.line-scale-pulse-out > div,
+.line-scale > div {
+  width: 4px;
+  height: 35px;
+  display: inline-block;
+}
+.line-scale-party > div,
+.line-scale-pulse-out-rapid > div,
+.line-scale-pulse-out > div,
+.line-scale > div,
+.line-spin-fade-loader > div {
+  border-radius: 2px;
+  margin: 2px;
+  background-color: #fff;
+}
+.ball-zig-zag-deflect > div:first-child {
+  -webkit-animation: ball-zig-deflect 1.5s 0s infinite linear;
+  animation: ball-zig-deflect 1.5s 0s infinite linear;
+}
+.ball-zig-zag-deflect > div:last-child {
+  -webkit-animation: ball-zag-deflect 1.5s 0s infinite linear;
+  animation: ball-zag-deflect 1.5s 0s infinite linear;
+}
+@-webkit-keyframes line-scale {
+  0%,
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4);
+  }
+}
+@keyframes line-scale {
+  0%,
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4);
+  }
+}
+.line-scale > div:nth-child(1) {
+  -webkit-animation: line-scale 1s -0.4s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: line-scale 1s -0.4s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.line-scale > div:nth-child(2) {
+  -webkit-animation: line-scale 1s -0.3s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: line-scale 1s -0.3s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.line-scale > div:nth-child(3) {
+  -webkit-animation: line-scale 1s -0.2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: line-scale 1s -0.2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.line-scale > div:nth-child(4) {
+  -webkit-animation: line-scale 1s -0.1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: line-scale 1s -0.1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.line-scale > div:nth-child(5) {
+  -webkit-animation: line-scale 1s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  animation: line-scale 1s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+.line-scale > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes line-scale-party {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+@keyframes line-scale-party {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+.line-scale-party > div:nth-child(1) {
+  -webkit-animation-delay: 0.48s;
+  animation-delay: 0.48s;
+  -webkit-animation-duration: 0.54s;
+  animation-duration: 0.54s;
+}
+.line-scale-party > div:nth-child(2) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+  -webkit-animation-duration: 1.15s;
+  animation-duration: 1.15s;
+}
+.line-scale-party > div:nth-child(3) {
+  -webkit-animation-delay: 40ms;
+  animation-delay: 40ms;
+  -webkit-animation-duration: 0.77s;
+  animation-duration: 0.77s;
+}
+.line-scale-party > div:nth-child(4) {
+  -webkit-animation-delay: -0.12s;
+  animation-delay: -0.12s;
+  -webkit-animation-duration: 0.61s;
+  animation-duration: 0.61s;
+}
+.line-scale-party > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: line-scale-party;
+  animation-name: line-scale-party;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+@-webkit-keyframes line-scale-pulse-out {
+  0%,
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4);
+  }
+}
+@keyframes line-scale-pulse-out {
+  0%,
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4);
+  }
+}
+.line-scale-pulse-out > div {
+  -webkit-animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+  animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+}
+.line-scale-pulse-out > div:nth-child(2),
+.line-scale-pulse-out > div:nth-child(4) {
+  -webkit-animation-delay: -0.4s !important;
+  animation-delay: -0.4s !important;
+}
+.line-scale-pulse-out > div:nth-child(1),
+.line-scale-pulse-out > div:nth-child(5) {
+  -webkit-animation-delay: -0.2s !important;
+  animation-delay: -0.2s !important;
+}
+@-webkit-keyframes line-scale-pulse-out-rapid {
+  0%,
+  90% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+  80% {
+    -webkit-transform: scaley(0.3);
+    transform: scaley(0.3);
+  }
+}
+@keyframes line-scale-pulse-out-rapid {
+  0%,
+  90% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+  80% {
+    -webkit-transform: scaley(0.3);
+    transform: scaley(0.3);
+  }
+}
+.line-scale-pulse-out-rapid > div {
+  vertical-align: middle;
+  -webkit-animation: line-scale-pulse-out-rapid 0.9s -0.5s infinite cubic-bezier(0.11, 0.49, 0.38, 0.78);
+  animation: line-scale-pulse-out-rapid 0.9s -0.5s infinite cubic-bezier(0.11, 0.49, 0.38, 0.78);
+}
+.line-scale-pulse-out-rapid > div:nth-child(2),
+.line-scale-pulse-out-rapid > div:nth-child(4) {
+  -webkit-animation-delay: -0.25s !important;
+  animation-delay: -0.25s !important;
+}
+.line-scale-pulse-out-rapid > div:nth-child(1),
+.line-scale-pulse-out-rapid > div:nth-child(5) {
+  -webkit-animation-delay: 0s!important;
+  animation-delay: 0s !important;
+}
+@-webkit-keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes line-spin-fade-loader {
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.line-spin-fade-loader {
+  position: relative;
+  top: -10px;
+  left: -4px;
+}
+.line-spin-fade-loader > div:nth-child(1) {
+  top: 20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s -0.84s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.84s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(2) {
+  top: 13.64px;
+  left: 13.64px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s -0.72s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.72s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(3) {
+  top: 0;
+  left: 20px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s -0.6s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.6s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(4) {
+  top: -13.64px;
+  left: 13.64px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s -0.48s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.48s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(5) {
+  top: -20px;
+  left: 0;
+  -webkit-animation: line-spin-fade-loader 1.2s -0.36s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.36s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(6) {
+  top: -13.64px;
+  left: -13.64px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s -0.24s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.24s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(7) {
+  top: 0;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: line-spin-fade-loader 1.2s -0.12s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s -0.12s infinite ease-in-out;
+}
+.line-spin-fade-loader > div:nth-child(8) {
+  top: 13.64px;
+  left: -13.64px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: line-spin-fade-loader 1.2s 0s infinite ease-in-out;
+  animation: line-spin-fade-loader 1.2s 0s infinite ease-in-out;
+}
+.line-spin-fade-loader > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+@-webkit-keyframes triangle-skew-spin {
+  25% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
+  50% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
+@keyframes triangle-skew-spin {
+  25% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
+  50% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
+.triangle-skew-spin > div {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  -webkit-animation: triangle-skew-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+  animation: triangle-skew-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+}
+@-webkit-keyframes square-spin {
+  25% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
+  50% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
+@keyframes square-spin {
+  25% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
+  50% {
+    -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
+.square-spin > div {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  -webkit-animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+  animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+}
+.pacman > div:first-of-type,
+.pacman > div:nth-child(2) {
+  width: 0;
+  height: 0;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  position: relative;
+  left: -30px;
+}
+@-webkit-keyframes rotate_pacman_half_up {
+  0%,
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate_pacman_half_up {
+  0%,
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate_pacman_half_down {
+  0%,
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@keyframes rotate_pacman_half_down {
+  0%,
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes pacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
+  }
+}
+@keyframes pacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
+  }
+}
+.pacman {
+  position: relative;
+}
+.pacman > div:nth-child(3) {
+  -webkit-animation: pacman-balls 1s -0.66s infinite linear;
+  animation: pacman-balls 1s -0.66s infinite linear;
+}
+.pacman > div:nth-child(4) {
+  -webkit-animation: pacman-balls 1s -0.33s infinite linear;
+  animation: pacman-balls 1s -0.33s infinite linear;
+}
+.pacman > div:nth-child(5) {
+  -webkit-animation: pacman-balls 1s 0s infinite linear;
+  animation: pacman-balls 1s 0s infinite linear;
+}
+.pacman > div:first-of-type {
+  -webkit-animation: rotate_pacman_half_up 0.5s 0s infinite;
+  animation: rotate_pacman_half_up 0.5s 0s infinite;
+}
+.pacman > div:nth-child(2) {
+  -webkit-animation: rotate_pacman_half_down 0.5s 0s infinite;
+  animation: rotate_pacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+}
+.pacman > div:nth-child(3),
+.pacman > div:nth-child(4),
+.pacman > div:nth-child(5),
+.pacman > div:nth-child(6) {
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  -webkit-transform: translate(0, -6.25px);
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+@-webkit-keyframes cube-transition {
+  25% {
+    -webkit-transform: translateX(50px) scale(0.5) rotate(-90deg);
+    transform: translateX(50px) scale(0.5) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(50px, 50px) rotate(-180deg);
+    transform: translate(50px, 50px) rotate(-180deg);
+  }
+  75% {
+    -webkit-transform: translateY(50px) scale(0.5) rotate(-270deg);
+    transform: translateY(50px) scale(0.5) rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes cube-transition {
+  25% {
+    -webkit-transform: translateX(50px) scale(0.5) rotate(-90deg);
+    transform: translateX(50px) scale(0.5) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(50px, 50px) rotate(-180deg);
+    transform: translate(50px, 50px) rotate(-180deg);
+  }
+  75% {
+    -webkit-transform: translateY(50px) scale(0.5) rotate(-270deg);
+    transform: translateY(50px) scale(0.5) rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.cube-transition {
+  position: relative;
+  -webkit-transform: translate(-25px, -25px);
+  transform: translate(-25px, -25px);
+}
+.cube-transition > div {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background-color: #fff;
+  -webkit-animation: cube-transition 1.6s 0s infinite ease-in-out;
+  animation: cube-transition 1.6s 0s infinite ease-in-out;
+}
+.cube-transition > div:last-child {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes spin-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.semi-circle-spin {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+.semi-circle-spin > div {
+  position: absolute;
+  border-width: 0;
+  border-radius: 100%;
+  -webkit-animation: spin-rotate 0.6s 0s infinite linear;
+  animation: spin-rotate 0.6s 0s infinite linear;
+  background-image: linear-gradient(transparent 0, transparent 70%, #fff 30%, #fff 100%);
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+</head>
+
+<body style="background: #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: #f3f3f3">
+        <h3 class="invisibile">
+            <a class="logo">
+                Tongwen Li
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a class="logo">
+            Tongwen Li's Website
+        </a>
+    </h1>
+    <h2 class="desc">
+    </h2>
+
+    <div class="links">
+        <ul>
+            <li><a href = "index.html">Biography</a></li><li><a href = "news.html">News</a></li>
+			· <li><a href = "paper.html">Publication</a></li>
+			· <li><a href = "award.html">Award</a></li>
+			· <li><a href = "project.html">Project</a></li>
+			· <li><a href = "data.html">Product</a></li>
+        </ul>
+    </div>
+</header>
+        <main class="main is-relative">
+            <article class="post">
+    
+    
+    
+    <h2 class="post-title">
+        Publications
+    </h2>
+    <div class="post-content">
+	
+    <p><strong>   1. Journal Papers</strong></p>
+<ul>
+<li><p>Wang, B., Yuan, Q., Yang, Q., Zhu, L., <strong>Li T.</strong>, Zhang, L., 2021. Estimate hourly PM2.5 concentrations from Himawari-8 TOA reflectance directly using geo-intelligent long short-term memory network. <em>Environmental Pollution</em>, 271, 116327. <a href='https://doi.org/10.1016/j.envpol.2020.116327' target='_blank' class='url'>https://doi.org/10.1016/j.envpol.2020.116327</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Zhang, X., Shen, H., <strong>Li T.</strong>, Zhang, L., 2020, The Effects of Fireworks Discharge on Atmospheric PM2.5 Concentration in the Chinese Lunar New Year. <em>International Journal of Environmental Research and Public Health</em>, 17. <a href='https://doi.org/10.3390/ijerph17249333' target='_blank' class='url'>https://doi.org/10.3390/ijerph17249333</a> <strong>(SCI)</strong></p>
+</li>
+<li><p>Yang, Q., Yuan, Q., <strong>Li T.</strong>, Yue, L., 2020. Mapping PM2.5 concentration at high resolution using a cascade random forest based downscaling model: Evaluation and application. <em>Journal of Cleaner Production</em>, 277, 123887. <a href='https://doi.org/10.1016/j.jclepro.2020.123887' target='_blank' class='url'>https://doi.org/10.1016/j.jclepro.2020.123887</a> <strong>(SCI Q1, TOP)</strong></p>
+</li>
+<li><p><strong>Li T.</strong>, Wang, Y., Yuan, Q., 2020. Remote Sensing Estimation of Regional NO2 via Space-Time Neural Networks. <em>Remote Sensing</em>, 12. <a href='https://doi.org/10.3390/rs12162514' target='_blank' class='url'>https://doi.org/10.3390/rs12162514</a> <strong>(SCI, First author)</strong></p>
+</li>
+<li><p><strong>Li T.</strong>, Shen, H., Yuan, Q., Zhang, L., 2020. Geographically and temporally weighted neural networks for satellite-based mapping of ground-level PM2.5. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 167, 178-188. <a href='https://doi.org/10.1016/j.isprsjprs.2020.06.019' target='_blank' class='url'>https://doi.org/10.1016/j.isprsjprs.2020.06.019</a> <strong>(SCI Q1，TOP, First author)</strong></p>
+</li>
+<li><p><strong>Li T.</strong>, Shen, H., Zeng, C., Yuan, Q., 2020. A Validation Approach Considering the Uneven Distribution of Ground Stations for Satellite-Based PM2.5 Estimation. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>,  13, 1312-1321. <a href='https://doi.org/10.1109/JSTARS.2020.2977668' target='_blank' class='url'>https://doi.org/10.1109/JSTARS.2020.2977668</a> <strong>(SCI, First author)</strong></p>
+</li>
+<li><p>Yang, Q., Yuan, Q., Yue, L., <strong>Li T.</strong>, Shen, H., Zhang, L., 2020. Mapping PM2.5 concentration at a sub-km level resolution: A dual-scale retrieval approach. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 165, 140-151. <a href='https://doi.org/10.1016/j.isprsjprs.2020.05.018' target='_blank' class='url'>https://doi.org/10.1016/j.isprsjprs.2020.05.018</a> <strong>(SCI Q1，TOP, Co-corresponding author)</strong></p>
+</li>
+<li><p>Wang, J., Yuan, Q., Shen, H., Liu, T., <strong>Li T.</strong>, Yue, L., Shi, X., Zhang, L., 2020. Estimating snow depth by combining satellite data and ground-based observations over Alaska: A deep learning approach. <em>Journal of Hydrology</em>, 585, 124828. <a href='https://doi.org/10.1016/j.jhydrol.2020.124828' target='_blank' class='url'>https://doi.org/10.1016/j.jhydrol.2020.124828</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Yuan, Q., Shen, H., <strong>Li T.</strong>, Li, Z., Li, S., Jiang, Y., Xu, H., Tan, W., Yang, Q., Wang, J., Gao, J., Zhang, L., 2020. Deep learning in environmental remote sensing: Achievements and challenges. <em>Remote Sensing of Environment</em>, 241, 111716. <a href='https://doi.org/10.1016/j.rse.2020.111716' target='_blank' class='url'>https://doi.org/10.1016/j.rse.2020.111716</a> <strong>(SCI Q1,TOP, ESI Highly Cited Paper)</strong></p>
+</li>
+<li><p>Shen, H., Jiang, Y., <strong>Li T.</strong>, Cheng, Q., Zeng, C., Zhang, L., 2020. Deep learning-based air temperature mapping by fusing remote sensing, station, simulation and socioeconomic data. <em>Remote Sensing of Environment</em>, 240, 111692. <a href='https://doi.org/10.1016/j.rse.2020.111692' target='_blank' class='url'>https://doi.org/10.1016/j.rse.2020.111692</a> <strong>(SCI Q1,TOP)</strong></p>
+</li>
+<li><p>Yang, Q., Yuan, Q., Yue, L., <strong>Li T.</strong>, 2020. Investigation of the spatially varying relationships of PM2. 5 with meteorology, topography, and emissions in China in 2015 by using modified geographically weighted regression. <em>Environmental Pollution</em>, 114257. <a href='https://doi.org/10.1016/j.envpol.2020.114257' target='_blank' class='url'>https://doi.org/10.1016/j.envpol.2020.114257</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Yuan, Q., Xu, H., <strong>Li T.</strong>, Shen, H., Zhang, L., 2020. Estimating surface soil moisture from satellite observations using a generalized regression neural network trained on sparse ground-based measurements in the continental U.S. <em>Journal of Hydrology</em>, 580, 124351. <a href='https://doi.org/10.1016/j.jhydrol.2019.124351' target='_blank' class='url'>https://doi.org/10.1016/j.jhydrol.2019.124351</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Wang, Y., Yuan, Q., <strong>Li T.</strong>, Shen, H., Zheng, L., Zhang, L., 2019. Large-scale MODIS AOD products recovery: Spatial-temporal hybrid fusion considering aerosol variation mitigation. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 157, 1-12. <a href='https://doi.org/10.1016/j.isprsjprs.2019.08.017' target='_blank' class='url'>https://doi.org/10.1016/j.isprsjprs.2019.08.017</a> <strong>(SCI Q1, TOP, Co-corresponding author)</strong></p>
+</li>
+<li><p>Yuan, M., Song, Y., Huang, Y., Shen, H., <strong>Li T.</strong>, 2019. Exploring the association between the built environment and remotely sensed PM2.5 concentrations in urban areas. <em>Journal of Cleaner Production</em>, 220, 1014-1023. <a href='https://doi.org/10.1016/j.jclepro.2019.02.236' target='_blank' class='url'>https://doi.org/10.1016/j.jclepro.2019.02.236</a> <strong>(SCI Q1, TOP)</strong></p>
+</li>
+<li><p>Yang, Q., Yuan, Q., Yue, L., <strong>Li T.</strong>, Shen, H., Zhang, L., 2019. The relationships between PM2.5 and aerosol optical depth (AOD) in mainland China: About and behind the spatio-temporal variations. <em>Environmental Pollution</em>, 248, 526-535. <a href='https://doi.org/10.1016/j.envpol.2019.02.071' target='_blank' class='url'>https://doi.org/10.1016/j.envpol.2019.02.071</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Guo, L., Luo, J., Yuan, M., Huang, Y., Shen, H., <strong>Li T.</strong>, 2019. The influence of urban planning factors on PM2.5 pollution exposure and implications: A case study in China based on remote sensing, LBS, and GIS data. <em>Science of The Total Environment</em>, 659, 1585-1596. <a href='https://doi.org/10.1016/j.scitotenv.2018.12.448' target='_blank' class='url'>https://doi.org/10.1016/j.scitotenv.2018.12.448</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Wang, Y., Yuan, Q., <strong>Li T.</strong>, Shen, H., Zheng, L., Zhang, L., 2019. Evaluation and comparison of MODIS Collection 6.1 aerosol optical depth against AERONET over regions in China with multifarious underlying surfaces. <em>Atmospheric Environment</em>, 200, 280-301. <a href='https://doi.org/10.1016/j.atmosenv.2018.12.023' target='_blank' class='url'>https://doi.org/10.1016/j.atmosenv.2018.12.023</a> <strong>(SCI, TOP, ESI Highly Cited Paper)</strong></p>
+</li>
+<li><p>Chen, J., Shen, H., <strong>Li T.</strong>, Peng, X., Cheng, H., Ma, C., 2019. Temporal and Spatial Features of the Correlation between PM2. 5 and O3 Concentrations in China. <em>International Journal of Environmental Research and Public Health</em>, 16, 4824. <a href='https://doi.org/10.3390/ijerph16234824' target='_blank' class='url'>https://doi.org/10.3390/ijerph16234824</a> <strong>(SCI)</strong></p>
+</li>
+<li><p>Shen, H., Zhou, M., <strong>Li T.</strong>, Zeng, C., 2019. Integration of Remote Sensing and Social Sensing Data in a Deep Learning Framework for Hourly Urban PM2.5 Mapping. <em>International Journal of Environmental Research and Public Health</em>, 16. <a href='https://doi.org/10.3390/ijerph16214102' target='_blank' class='url'>https://doi.org/10.3390/ijerph16214102</a> <strong>(SCI)</strong></p>
+</li>
+<li><p>Yuan, Q., Li, S., Yue, L., <strong>Li T.</strong>, Shen, H., Zhang, L., 2019. Monitoring the Variation of Vegetation Water Content with Machine Learning Methods: Point–Surface Fusion of MODIS Products and GNSS-IR Observations. <em>Remote Sensing</em>, 11. <a href='https://doi.org/10.3390/rs11121440' target='_blank' class='url'>https://doi.org/10.3390/rs11121440</a> <strong>(SCI)</strong></p>
+</li>
+<li><p>Shen, H., <strong>Li T.</strong>, Yuan, Q., Zhang, L., 2018. Estimating Regional Ground-Level PM2.5 Directly From Satellite Top-Of-Atmosphere Reflectance Using Deep Belief Networks. <em>Journal of Geophysical Research: Atmospheres</em>, 123, 13,875-813,886. <a href='https://doi.org/10.1029/2018JD028759' target='_blank' class='url'>https://doi.org/10.1029/2018JD028759</a> <strong>(SCI, TOP)</strong></p>
+</li>
+<li><p>Xu, H., Yuan, Q., <strong>Li T.</strong>, Shen, H., Zhang, L., Jiang, H., 2018. Quality Improvement of Satellite Soil Moisture Products by Fusing with In-Situ Measurements and GNSS-R Estimates in the Western Continental U.S. <em>Remote Sensing</em>, 10. <a href='https://doi.org/10.3390/rs10091351' target='_blank' class='url'>https://doi.org/10.3390/rs10091351</a> <strong>(SCI)</strong></p>
+</li>
+<li><p>Yuan, M., Huang, Y., Shen, H., <strong>Li T.</strong>, 2018. Effects of urban form on haze pollution in China: Spatial regression analysis based on PM2.5 remote sensing data. <em>Applied Geography</em>, 98, 215-223. <a href='https://doi.org/10.1016/j.apgeog.2018.07.018' target='_blank' class='url'>https://doi.org/10.1016/j.apgeog.2018.07.018</a> <strong>(SSCI)</strong></p>
+</li>
+<li><p><strong>Li T.</strong>, Shen, H., Yuan, Q., Zhang, X., Zhang, L., 2017. Estimating Ground-Level PM2.5 by Fusing Satellite and Station Observations: A Geo-Intelligent Deep Learning Approach. <em>Geophysical Research Letters</em>, 44, 11,985-11,993. <a href='https://doi.org/10.1002/2017gl075710' target='_blank' class='url'>https://doi.org/10.1002/2017gl075710</a> <strong>(SCI Q1, TOP, First author)</strong></p>
+</li>
+<li><p>Yang, Q., Yuan, Q., <strong>Li T.</strong>, Shen, H., Zhang, L., 2017. The Relationships between PM2.5 and Meteorological Factors in China: Seasonal and Regional Variations. <em>International Journal of Environmental Research and Public Health</em>, 14. <a href='https://doi.org/10.3390/ijerph14121510' target='_blank' class='url'>https://doi.org/10.3390/ijerph14121510</a> <strong>(SCI)</strong></p>
+</li>
+<li><p><strong>Li T.</strong>, Shen, H., Zeng, C., Yuan, Q., Zhang, L., 2017. Point-surface fusion of station measurements and satellite observations for mapping PM2.5 distribution in China: Methods and assessment. <em>Atmospheric Environment</em>, 152, 477-489. <a href='http://dx.doi.org/10.1016/j.atmosenv.2017.01.004' target='_blank' class='url'>http://dx.doi.org/10.1016/j.atmosenv.2017.01.004</a> <strong>(SCI, TOP, First author)</strong></p>
+</li>
+<li><p>沈焕锋, <strong>李同文</strong>, 2019. 大气PM2.5遥感制图研究进展. <em>测绘学报</em>, 48, 1624. <a href='http://xb.sinomaps.com/CN/10.11947/j.AGCS.2019.20190456' target='_blank' class='url'>http://xb.sinomaps.com/CN/10.11947/j.AGCS.2019.20190456</a> <strong>(EI, Corresponding author)</strong>(in Chinese)</p> 
+</li>
+</ul>
+
+<p><strong>2. Conference Paper</strong></p>
+<ul>
+<li><p>Wang, Y., Yuan, Q., Xiao, R., <strong>Li T.</strong>, Zhang, L., 2020. Recovery of the Carbon Monoxide Product from S5P-TROPOMI by Fusing Multiple Datasets: A Case Study in Hubei Province, China. <em>2020 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 5529-5532. Waikoloa, HI, USA. <a href='http://dx.doi.org/10.1109/IGARSS39084.2020.9323092' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS39084.2020.9323092</a>
+</li>
+<li><p>Xu, H., Yuan, Q., <strong>Li T.</strong>, Shen, H., Zhang, L., 2019. Estimating Surface Soil Moisture from Satellite Observations Using Machine Learning Trained on In Situ Measurements in the Continental U.S. <em>2019 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 6166-6169. Yokohama, Japan. <a href='http://dx.doi.org/10.1109/IGARSS.2019.8900101' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS.2019.8900101</a>
+</li>
+<li><p>Wang, Y., Yuan, Q., Wang, H., <strong>Li T.</strong>, Shen, H., Zhang, L., 2019. Validation of MODIS 1-Km MAIAC Aerosol Products with AERONET in China During 2008-2016. <em>2019 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 7610-7613. Yokohama, Japan. <a href='http://dx.doi.org/10.1109/IGARSS.2019.8898248' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS.2019.8898248</a>
+</li>
+<li><p>Wang, J., Yuan, Q., <strong>Li T.</strong>, Shen, H., Zhang, L., 2019. Estimating Snow-Depth by Fusing Satellite and Station Observations: A Deep Learning Approach. <em>2019 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 4109-4112. Yokohama, Japan. <a href='http://dx.doi.org/10.1109/IGARSS.2019.8900518' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS.2019.8900518</a>
+</li>
+<li><p>Li, S., Yuan, Q., Yue, L., <strong>Li T.</strong>, Shen, H., Zhang, L., 2019. Downscaling GNSS-R Based Vegetation Water Content Product Using Random Forest Model. <em>2019 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 6720-6723. Yokohama, Japan. <a href='http://dx.doi.org/10.1109/IGARSS.2019.8900472' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS.2019.8900472</a>
+</li>
+<li><p><strong>Li T.</strong>, Zhang, C., Shen, H., Yuan, Q., Zhang, L., 2018. REAL-TIME AND SEAMLESS MONITORING OF GROUND-LEVEL PM2.5 USING SATELLITE REMOTE SENSING. <em>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences.</em> pp. 143-147. Beijing, China. <a href='http://dx.doi.org/10.5194/isprs-annals-IV-3-143-2018' target='_blank' class='url'>http://dx.doi.org/10.5194/isprs-annals-IV-3-143-2018</a>
+</li>
+<li><p><strong>Li T.</strong>, Shen, H., Yuan, Q., Zhang, L., 2018. Deep Learning for Ground-Level PM2.5 Prediction from Satellite Remote Sensing Data. <em>2018 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 7581-7584. Valencia, Spain. <a href='http://dx.doi.org/10.1109/IGARSS.2018.8519036' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS.2018.8519036</a>
+</li>
+<li><p>Zhang, X., Shen, H., <strong>Li T.</strong>, 2016. Effect characteristics of Chinese New Year fireworks/firecrackers on PM2.5 concentration at large space and time scales. <em>2016 4th International Workshop on Earth Observation and Remote Sensing Applications.</em> pp. 179-182. Guangzhou, China. <a href='http://dx.doi.org/10.1109/EORSA.2016.7552792' target='_blank' class='url'>http://dx.doi.org/10.1109/EORSA.2016.7552792</a>
+</li>
+<li><p><strong>Li T.</strong>, Shen, H., Zhang, L., 2016. Mapping PM2.5 distribution in China by fusing station measurements and satellite observation. <em>2016 IEEE International Geoscience and Remote Sensing Symposium.</em> pp. 5761-5764. Beijing, China. <a href='http://dx.doi.org/10.1109/IGARSS.2016.7730505' target='_blank' class='url'>http://dx.doi.org/10.1109/IGARSS.2016.7730505</a>
+</li>
+</ul>
+
+<p><strong>   3. Patent</strong> (in Chinese)</p>
+<ul>
+<li><p>沈焕锋，李同文. 一种结合卫星和站点观测反演时空连续PM2.5浓度的方法，授权号：ZL201510849327.0. 授权时间：2018.01</p> 
+</li>
+<li><p>沈焕锋，周曼，李同文，袁强强. 一种结合遥感数据与社会感知数据的PM2.5深度学习反演方法. 申请号：201910451339.6.</p> 
+</li>
+</ul>
+
+<p><strong>   4. Software Copyright</strong> (in Chinese)</p>
+<ul>
+<li><p>沈焕锋，李同文，徐少良，袁强强. 大气PM2.5实时无缝监测发布系统，软件著作权登记号：2019SR0535101.</p> 
+</li>
+</ul>
+
+    </div>
+</article>
+
+        <div class="loader-inner line-scale is-hidden">
+		    <div style="background-color: #f78769"></div>
+			<div style="background-color: #f78769"></div>
+			<div style="background-color: #f78769"></div>
+			<div style="background-color: #f78769"></div>
+			<div style="background-color: #f78769"></div>
+		</div>
+		</main>
+		
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                <h1><image width = "128" src="ltw.jpg"/></h1>
+				<ul class="category-list">
+				<li><a>Tongwen Li, Assistant Professor</a></li>
+				<li><a>Sun Yat-Sen University</a></li>
+				<li><a>Zhuhai Campus of Sun Yat-Sen University, Zhuhai, China</a></li>
+				<li><a>Email: litw8@mail.sysu.edu.cn</a></li>
+				</ul>
+
+            </section>
+        </aside>
+    </div>
+
+
+</body></html>
